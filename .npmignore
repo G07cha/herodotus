@@ -1,0 +1,7 @@
+lib
+test
+typings
+.gitignore
+.jshintrc
+index.ts
+tsconfig.json

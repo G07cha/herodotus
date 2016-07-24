@@ -1,0 +1,27 @@
+{
+  "name": "herodotus",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers ts:espower-typescript/guess test/**/*.spec.ts",
+    "clean": "rm -r dist",
+    "build": "npm run clean && tsc -p tsconfig.json --outDir dist",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "history"
+  ],
+  "typings": "dist/index",
+  "author": "g07cha",
+  "license": "MIT",
+  "devDependencies": {
+    "espower-typescript": "^5.0.1",
+    "mocha": "^2.5.3",
+    "power-assert": "^1.4.1",
+    "typescript": "^1.8.10"
+  }
+}
